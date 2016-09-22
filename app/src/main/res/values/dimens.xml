@@ -1,0 +1,11 @@
+<resources>
+    <!-- old: 16dp -->
+    <dimen name="activity_horizontal_margin">4dp</dimen>
+    <dimen name="activity_vertical_margin">4dp</dimen>
+
+    <dimen name="fragment_padding">8dp</dimen>
+
+    <dimen name="courses_list_count_margin">10dp</dimen>
+    <dimen name="courses_list_underscore_width">30dp</dimen>
+    <dimen name="courses_list_underscore_height">3dp</dimen>
+</resources>

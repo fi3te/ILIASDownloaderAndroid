@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:key="CHOOSE_ILIAS"
+        android:persistent="false"
+        android:summary="@string/easy_setup"
+        android:title="@string/choose_ilias" />
+
+    <Preference
+        android:key="ILIAS_SERVER_URL"
+        android:persistent="false"
+        android:title="@string/ilias_server_url" />
+
+    <Preference
+        android:key="ILIAS_CLIENT"
+        android:persistent="false"
+        android:title="@string/ilias_client" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="ALLOW_DOWNLOAD"
+        android:title="@string/allow_download" />
+
+    <Preference
+        android:dependency="ALLOW_DOWNLOAD"
+        android:key="BASE_DIR"
+        android:persistent="false"
+        android:title="@string/base_directory" />
+
+    <Preference
+        android:dependency="ALLOW_DOWNLOAD"
+        android:key="MAX_SIZE"
+        android:persistent="false"
+        android:title="@string/max_file_size" />
+
+</PreferenceScreen>

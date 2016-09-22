@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/selectableItemBackground"
+    android:paddingBottom="10dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="10dp">
+
+    <View
+        android:id="@+id/indicatorView"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:background="@color/red_500" />
+
+    <TextView
+        android:id="@+id/courseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/indicatorView"
+        android:text="Kursname"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/courseName"
+        android:layout_below="@+id/courseName">
+
+        <TextView
+            android:id="@+id/alreadyUpToDateCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/courses_list_count_margin"
+            android:text="00"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="@dimen/courses_list_underscore_width"
+            android:layout_height="@dimen/courses_list_underscore_height"
+            android:layout_below="@+id/alreadyUpToDateCount"
+            android:background="@color/green_500" />
+
+        <TextView
+            android:id="@+id/updatedCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/courses_list_count_margin"
+            android:layout_toRightOf="@+id/alreadyUpToDateCount"
+            android:text="00"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <View
+            android:layout_width="@dimen/courses_list_underscore_width"
+            android:layout_height="@dimen/courses_list_underscore_height"
+            android:layout_below="@+id/updatedCount"
+            android:layout_toRightOf="@+id/alreadyUpToDateCount"
+            android:background="@color/teal_500" />
+
+        <TextView
+            android:id="@+id/ignoredCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/courses_list_count_margin"
+            android:layout_toRightOf="@+id/updatedCount"
+            android:text="00"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <View
+            android:layout_width="@dimen/courses_list_underscore_width"
+            android:layout_height="@dimen/courses_list_underscore_height"
+            android:layout_below="@+id/ignoredCount"
+            android:layout_toRightOf="@+id/updatedCount"
+            android:background="@color/grey_500" />
+
+        <TextView
+            android:id="@+id/loadingCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/courses_list_count_margin"
+            android:layout_toRightOf="@+id/ignoredCount"
+            android:text="00"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <View
+            android:layout_width="@dimen/courses_list_underscore_width"
+            android:layout_height="@dimen/courses_list_underscore_height"
+            android:layout_below="@+id/loadingCount"
+            android:layout_toRightOf="@+id/ignoredCount"
+            android:background="@color/yellow_500" />
+
+        <TextView
+            android:id="@+id/corruptCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/courses_list_count_margin"
+            android:layout_toRightOf="@+id/loadingCount"
+            android:text="00"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <View
+            android:layout_width="@dimen/courses_list_underscore_width"
+            android:layout_height="@dimen/courses_list_underscore_height"
+            android:layout_below="@+id/corruptCount"
+            android:layout_toRightOf="@+id/loadingCount"
+            android:background="@color/purple_500" />
+
+        <TextView
+            android:id="@+id/errorCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/courses_list_count_margin"
+            android:layout_toRightOf="@+id/corruptCount"
+            android:text="00"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <View
+            android:layout_width="@dimen/courses_list_underscore_width"
+            android:layout_height="@dimen/courses_list_underscore_height"
+            android:layout_below="@+id/errorCount"
+            android:layout_toRightOf="@+id/corruptCount"
+            android:background="@color/red_500" />
+
+    </RelativeLayout>
+</RelativeLayout>

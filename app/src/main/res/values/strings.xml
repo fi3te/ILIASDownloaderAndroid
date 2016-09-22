@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ILIAS Downloader</string>
+    <string name="navigation">Navigation</string>
+
+    <!-- NavigationView -->
+    <string name="ignore_list">Ignorierte Dateien</string>
+    <string name="recommend">Empfehlen</string>
+    <string name="recommend_by">Empfehlen mittels...</string>
+    <string name="recommendation_text">Hol dir den ILIAS Downloader, um Dokumente einfach aus der e-Learning Plattform ILIAS herunterzuladen! https://play.google.com/store/apps/details?id=wennierfiete.iliasdownloader</string>
+    <string name="help">Hilfe</string>
+    <string name="rate_app">App bewerten</string>
+    <string name="report_bug">Fehler melden</string>
+    <string name="settings">Einstellungen</string>
+    <string name="logout">Abmeldung</string>
+    <string name="synchronisation_is_running">Synchronisation läuft...</string>
+    <string name="version">Version</string>
+    <string name="comming_soon">in Kürze verfügbar</string>
+
+    <!-- IliasActivity -->
+    <string name="support">Support</string>
+    <string name="select_all">Alle auswählen</string>
+    <string name="close">Schließen</string>
+    <string name="please_login">Bitte einloggen</string>
+    <string name="choose_courses">Kurse auswählen</string>
+    <string name="courses">Kurse</string>
+    <string name="local_files">lokale Dateien</string>
+    <string name="current_synchronisation">aktuelle Synchronisation</string>
+    <string name="open">Öffnen</string>
+    <string name="download">Herunterladen</string>
+
+    <!-- LoginActivity -->
+    <string name="username">Benutzername</string>
+    <string name="password">Passwort</string>
+    <string name="log_in">einloggen</string>
+    <string name="login">Anmeldung</string>
+    <string name="login_failed">Anmeldung fehlgeschlagen</string>
+    <string name="manual_configuration">Manuelle \nKonfiguration</string>
+    <string name="skip_login">Anmeldung \nüberspringen</string>
+
+    <!-- Menu -->
+    <string name="licences">Lizenzen</string>
+    <string name="imprint">Impressum</string>
+    <string name="about">Über</string>
+
+    <!-- IliasController -->
+    <string name="synchronisation_starts">Synchronisation startet ...</string>
+    <string name="synchronisation_completed">Synchronisation abgeschlossen</string>
+    <string name="synchronisation_cancelled">Synchronisation abgebrochen</string>
+    <string name="sync_xxx_of_xxx_courses">Synchronisiere xxx von xxx Kursen</string>
+    <string name="file_is_loading">Datei wird geladen</string>
+
+    <!-- LastDownloadFragment -->
+    <string name="delete_history">Verlauf löschen</string>
+    <string name="unknown_type">Unbekannter Typ</string>
+
+    <!-- LoadCoursesFragment -->
+    <string name="please_wait">Bitte warten...</string>
+
+    <!-- Preferences -->
+    <string name="choose_ilias">ILIAS auswählen</string>
+    <string name="easy_setup">einfache Konfiguration</string>
+    <string name="ilias_server_url">ILIAS-Server-URL</string>
+    <string name="ilias_client">ILIAS-Client</string>
+    <string name="base_directory">Speicherort</string>
+    <string name="allow_download">automatischer Download</string>
+    <string name="max_file_size">maximale Dateigröße</string>
+    <string name="please_enter_the_ilias_soap_webservice_url_or_the_ilias_login_page_url">Bitte gib die ILIASSoapWebservice URL oder die URL der ILIAS-Anmeldeseite ein</string>
+    <string name="the_client_id_can_be_read_from_the_url_of_the_ilias_login_page">Die Client ID lässt sich aus der URL der ILIAS-Anmeldeseite ablesen</string>
+    <string name="e_g_">z.B.</string>
+
+    <!-- Other -->
+    <string name="local">lokal</string>
+    <string name="current">aktuell</string>
+    <string name="last">letzte</string>
+    <string name="overview">Überblick</string>
+    <string name="last_downloads">letzte Downloads</string>
+    <string name="delete">Löschen</string>
+    <string name="delete_and_ignore">Löschen und ignorieren</string>
+    <string name="remove">Entfernen</string>
+    <string name="created_in_cooperation_with_xxx">In Kooperation mit xxx entstanden :-)</string>
+
+</resources>

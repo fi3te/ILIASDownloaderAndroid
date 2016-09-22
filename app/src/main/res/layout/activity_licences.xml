@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar" />
+
+
+        <!-- ILIASDownloader -->
+
+
+        <!--suppress AndroidLintHardcodedText -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This product includes software developed by \nKevin Krummenauer (http://www.whiledo.de/)." />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!--suppress AndroidLintHardcodedText -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="ILIAS Downloader"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--suppress AndroidLintHardcodedText -->
+            <ImageButton
+                android:id="@+id/iliasDownloaderButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="ILIASDownloader"
+                android:src="@drawable/ic_action_send_now" />
+        </RelativeLayout>
+
+        <!--suppress AndroidLintHardcodedText -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Besten Dank, Kevin :-)" />
+
+        <include layout="@layout/template_license_separator" />
+
+
+        <!-- Joda-Time -->
+
+
+        <!--suppress AndroidLintHardcodedText -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This product includes software developed by \nJoda.org (http://www.joda.org/)." />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!--suppress AndroidLintHardcodedText -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Joda-Time - Java date and time API"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--suppress AndroidLintHardcodedText -->
+            <ImageButton
+                android:id="@+id/jodaTimeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="Joda-Time"
+                android:src="@drawable/ic_action_send_now" />
+        </RelativeLayout>
+
+        <!--suppress AndroidLintHardcodedText -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Copyright (c) 2002-2014 Joda.org. All rights reserved." />
+
+        <include layout="@layout/template_license_apache_hint" />
+
+        <include layout="@layout/template_license_separator" />
+
+
+        <!-- Simple -->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!--suppress AndroidLintHardcodedText -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Simple - XML Serialization"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--suppress AndroidLintHardcodedText -->
+            <ImageButton
+                android:id="@+id/simpleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="Simple - XML Serialization"
+                android:src="@drawable/ic_action_send_now" />
+        </RelativeLayout>
+
+        <!--suppress AndroidLintHardcodedText -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Copyright (c) 2013 niallg" />
+
+        <include layout="@layout/template_license_apache_hint" />
+
+        <include layout="@layout/template_license_separator" />
+
+
+        <!-- material-dialogs -->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!--suppress AndroidLintHardcodedText -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="material-dialogs"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--suppress AndroidLintHardcodedText -->
+            <ImageButton
+                android:id="@+id/materialDialogsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="material-dialogs"
+                android:src="@drawable/ic_action_send_now" />
+        </RelativeLayout>
+
+        <!--suppress AndroidLintHardcodedText -->
+        <TextView
+            android:id="@+id/materialDialogsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+
+        <include layout="@layout/template_license_separator" />
+
+
+        <!-- Advanced RecyclerView -->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!--suppress AndroidLintHardcodedText -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Advanced RecyclerView"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--suppress AndroidLintHardcodedText -->
+            <ImageButton
+                android:id="@+id/advancedRecyclerViewButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="Advanced RecyclerView"
+                android:src="@drawable/ic_action_send_now" />
+        </RelativeLayout>
+
+        <!--suppress AndroidLintHardcodedText -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Copyright (c) 2015 Haruki Hasegawa" />
+
+        <include layout="@layout/template_license_apache_hint" />
+
+        <include layout="@layout/template_license_separator" />
+
+
+        <!-- ksoap2-android -->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!--suppress AndroidLintHardcodedText -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="ksoap2-android"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--suppress AndroidLintHardcodedText -->
+            <ImageButton
+                android:id="@+id/ksoap2androidButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="ksoap2-android"
+                android:src="@drawable/ic_action_send_now" />
+        </RelativeLayout>
+
+        <!--suppress AndroidLintHardcodedText -->
+        <TextView
+            android:id="@+id/ksoap2androidTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+
+        <include layout="@layout/template_license_separator" />
+
+
+        <!-- Apache License -->
+
+
+        <TextView
+            android:id="@+id/apacheTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+</ScrollView>

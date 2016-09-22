@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/functions_group"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/login_item"
+            android:icon="@drawable/ic_account_box_black_24dp"
+            android:title="@string/login" />
+        <item
+            android:id="@+id/ignore_list_item"
+            android:icon="@drawable/ic_indeterminate_check_box_black_24dp"
+            android:title="@string/ignore_list" />
+    </group>
+
+    <group
+        android:id="@+id/information_group"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/recommendation_item"
+            android:icon="@drawable/ic_share_black_24dp"
+            android:title="@string/recommend" />
+        <item
+            android:id="@+id/rating_item"
+            android:icon="@drawable/ic_thumbs_up_down_black_24dp"
+            android:title="@string/rate_app" />
+
+        <item
+            android:id="@+id/bug_report_item"
+            android:icon="@drawable/ic_bug_report_black_24dp"
+            android:title="@string/report_bug" />
+    </group>
+
+    <item
+        android:id="@+id/settings_item"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="@string/settings" />
+
+    <group
+        android:id="@+id/session_group"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/logout_item"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="@string/logout" />
+    </group>
+
+</menu>

@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/coursesItem"
+        android:title="@string/courses"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/licencesItem"
+        android:title="@string/licences"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/imprintItem"
+        android:title="@string/imprint"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/aboutItem"
+        android:title="@string/about"
+        app:showAsAction="never" />
+
+</menu>

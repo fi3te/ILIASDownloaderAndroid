@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="primaryColor">@color/deep_orange_500</color>
+    <color name="primaryColorDark">@color/deep_orange_700</color>
+    <color name="accentColor">@color/blue_500</color>
+
+
+
+
+
+    <color name="deep_orange_500">#ff5722</color>
+    <color name="deep_orange_200">#ffab91</color>
+    <color name="deep_orange_700">#e64a19</color>
+    <color name="blue_500">#2196f3</color>
+
+    <color name="green_500">#4caf50</color>
+    <color name="teal_500">#009688</color>
+    <color name="red_500">#f44336</color>
+    <color name="yellow_500">#ffeb3b</color>
+    <color name="purple_500">#9c27b0</color>
+    <color name="grey_500">#9e9e9e</color>
+
+    <color name="blue_200">#90caf9</color>
+
+
+    <!--
+    <color name="primaryColor">#607D8B</color>
+    <color name="primaryColorDark">#455A64</color>
+    <color name="accentColor">#FF5252</color>
+    -->
+</resources>
