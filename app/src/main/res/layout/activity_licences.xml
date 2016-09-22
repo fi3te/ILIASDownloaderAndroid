@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <include
             android:id="@+id/app_bar"
@@ -20,11 +20,16 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fragment_padding"
+            android:layout_marginRight="@dimen/fragment_padding"
+            android:layout_marginTop="@dimen/fragment_padding"
             android:text="This product includes software developed by \nKevin Krummenauer (http://www.whiledo.de/)." />
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fragment_padding"
+            android:layout_marginRight="@dimen/fragment_padding">
 
             <!--suppress AndroidLintHardcodedText -->
             <TextView
@@ -43,6 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentTop="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="ILIASDownloader"
                 android:src="@drawable/ic_action_send_now" />
         </RelativeLayout>
@@ -51,6 +57,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fragment_padding"
+            android:layout_marginRight="@dimen/fragment_padding"
             android:text="Besten Dank, Kevin :-)" />
 
         <include layout="@layout/template_license_separator" />
@@ -63,11 +71,15 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fragment_padding"
+            android:layout_marginRight="@dimen/fragment_padding"
             android:text="This product includes software developed by \nJoda.org (http://www.joda.org/)." />
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fragment_padding"
+            android:layout_marginRight="@dimen/fragment_padding">
 
             <!--suppress AndroidLintHardcodedText -->
             <TextView
@@ -86,6 +98,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentTop="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Joda-Time"
                 android:src="@drawable/ic_action_send_now" />
         </RelativeLayout>
@@ -94,6 +107,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fragment_padding"
+            android:layout_marginRight="@dimen/fragment_padding"
             android:text="Copyright (c) 2002-2014 Joda.org. All rights reserved." />
 
         <include layout="@layout/template_license_apache_hint" />
@@ -106,7 +121,9 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fragment_padding"
+            android:layout_marginRight="@dimen/fragment_padding">
 
             <!--suppress AndroidLintHardcodedText -->
             <TextView
@@ -125,6 +142,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentTop="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Simple - XML Serialization"
                 android:src="@drawable/ic_action_send_now" />
         </RelativeLayout>
@@ -133,6 +151,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fragment_padding"
+            android:layout_marginRight="@dimen/fragment_padding"
             android:text="Copyright (c) 2013 niallg" />
 
         <include layout="@layout/template_license_apache_hint" />
@@ -145,7 +165,9 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fragment_padding"
+            android:layout_marginRight="@dimen/fragment_padding">
 
             <!--suppress AndroidLintHardcodedText -->
             <TextView
@@ -164,6 +186,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentTop="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="material-dialogs"
                 android:src="@drawable/ic_action_send_now" />
         </RelativeLayout>
@@ -173,6 +196,8 @@
             android:id="@+id/materialDialogsTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fragment_padding"
+            android:layout_marginRight="@dimen/fragment_padding"
             android:scrollbars="vertical" />
 
         <include layout="@layout/template_license_separator" />
@@ -183,7 +208,9 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fragment_padding"
+            android:layout_marginRight="@dimen/fragment_padding">
 
             <!--suppress AndroidLintHardcodedText -->
             <TextView
@@ -202,6 +229,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentTop="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Advanced RecyclerView"
                 android:src="@drawable/ic_action_send_now" />
         </RelativeLayout>
@@ -210,6 +238,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fragment_padding"
+            android:layout_marginRight="@dimen/fragment_padding"
             android:text="Copyright (c) 2015 Haruki Hasegawa" />
 
         <include layout="@layout/template_license_apache_hint" />
@@ -222,7 +252,9 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fragment_padding"
+            android:layout_marginRight="@dimen/fragment_padding">
 
             <!--suppress AndroidLintHardcodedText -->
             <TextView
@@ -241,6 +273,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentTop="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="ksoap2-android"
                 android:src="@drawable/ic_action_send_now" />
         </RelativeLayout>
@@ -250,6 +283,8 @@
             android:id="@+id/ksoap2androidTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fragment_padding"
+            android:layout_marginRight="@dimen/fragment_padding"
             android:scrollbars="vertical" />
 
         <include layout="@layout/template_license_separator" />
@@ -262,6 +297,8 @@
             android:id="@+id/apacheTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fragment_padding"
+            android:layout_marginRight="@dimen/fragment_padding"
             android:scrollbars="vertical"
             android:textSize="11sp" />
     </LinearLayout>
