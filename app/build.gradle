@@ -1,0 +1,63 @@
+apply plugin: 'android'
+
+repositories {
+    mavenCentral()
+    maven {
+        url "http://whiledo.de/maven/repo/"
+    }
+
+    maven {
+        url "https://oss.sonatype.org/content/repositories/ksoap2-android-releases"
+    }
+
+    maven {
+        url "https://jitpack.io"
+    }
+}
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+
+    //noinspection GroovyAssignabilityCheck
+    defaultConfig {
+        applicationId "wennierfiete.iliasdownloader"
+        minSdkVersion 14
+        targetSdkVersion 24
+        versionCode 4
+        versionName "0.4"
+    }
+    //noinspection GroovyAssignabilityCheck
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    //noinspection GroovyAssignabilityCheck
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+}
+
+//noinspection GroovyAssignabilityCheck
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+
+    compile 'com.afollestad.material-dialogs:core:0.9.0.2'
+
+    compile 'joda-time:joda-time:2.7'
+    compile 'com.h6ah4i.android.widget.advrecyclerview:advrecyclerview:0.7.4'
+
+    compile('de.whiledo.iliasdownloader:ILIASDownloader-SyncRunner:0.0.12-RELEASE') {
+        exclude group: 'stax', module: 'stax-api'
+        exclude group: 'xpp3', module: 'xpp3'
+    }
+}
