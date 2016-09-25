@@ -44,7 +44,7 @@ import com.afollestad.materialdialogs.MaterialDialog;
 
 import com.github.fi3te.iliasdownloader.R;
 import com.github.fi3te.iliasdownloader.view.IliasActivity;
-import com.github.fi3te.iliasdownloader.view.LicencesActivity;
+import com.github.fi3te.iliasdownloader.view.LicensesActivity;
 import com.github.fi3te.iliasdownloader.view.fragment.task.LoadCoursesDialogFragment;
 
 /**
@@ -62,7 +62,7 @@ public class MenuItemSelectedUtil {
                 fm.executePendingTransactions();
                 return true;
             case R.id.licencesItem:
-                activity.startActivity(new Intent(activity, LicencesActivity.class));
+                activity.startActivity(new Intent(activity, LicensesActivity.class));
                 return true;
             case R.id.imprintItem:
                 DialogUtil.showImprint(activity);

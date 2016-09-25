@@ -35,7 +35,7 @@
             android:launchMode="singleTop" />
 
         <activity
-            android:name=".view.LicencesActivity"
+            android:name=".view.LicensesActivity"
             android:label="@string/licences"
             android:launchMode="singleTop" />
 

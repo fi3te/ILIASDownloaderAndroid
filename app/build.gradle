@@ -24,7 +24,7 @@ android {
     //noinspection GroovyAssignabilityCheck
     defaultConfig {
         applicationId "wennierfiete.iliasdownloader"
-        minSdkVersion 14
+        minSdkVersion 16
         targetSdkVersion 24
         versionCode 4
         versionName "0.4"

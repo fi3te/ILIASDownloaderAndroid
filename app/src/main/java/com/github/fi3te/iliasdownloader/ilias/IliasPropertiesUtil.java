@@ -41,6 +41,7 @@ import java.util.Set;
 import de.whiledo.iliasdownloader2.service.IliasUtil;
 import de.whiledo.iliasdownloader2.syncrunner.service.IliasProperties;
 import com.github.fi3te.iliasdownloader.controller.DatabaseController;
+import com.github.fi3te.iliasdownloader.controller.PreferencesUtil;
 import com.github.fi3te.iliasdownloader.model.Key;
 
 /**
@@ -60,8 +61,7 @@ public class IliasPropertiesUtil {
     public static final Set<String> DEFAULT_ACTIVE_COURSES = new HashSet<>();
 
     public static IliasProperties readIliasProperties(Context context) {
-        // TODO change
-        SharedPreferences preferences = context.getSharedPreferences("de.whiledo.iliasdownloaderandroid", Context.MODE_PRIVATE);
+        SharedPreferences preferences = PreferencesUtil.getPreferences(context);
         IliasProperties iliasProperties = new IliasProperties();
 
         iliasProperties.setIliasServerURL(preferences.getString(Key.ILIAS_SERVER_URL, DEFAULT_ILIAS_SERVER_URL));
@@ -90,16 +90,14 @@ public class IliasPropertiesUtil {
     }
 
     public static void putString(Context context, String key, String value) {
-        // TODO change
-        SharedPreferences preferences = context.getSharedPreferences("de.whiledo.iliasdownloaderandroid", Context.MODE_PRIVATE);
+        SharedPreferences preferences = PreferencesUtil.getPreferences(context);
         SharedPreferences.Editor editor = preferences.edit();
         editor.putString(key, value);
         editor.commit();
     }
 
     public static void setSyncAll(Context context, boolean syncAll) {
-        // TODO change
-        SharedPreferences preferences = context.getSharedPreferences("de.whiledo.iliasdownloaderandroid", Context.MODE_PRIVATE);
+        SharedPreferences preferences = PreferencesUtil.getPreferences(context);
         SharedPreferences.Editor editor = preferences.edit();
         editor.putBoolean(Key.SYNC_ALL, syncAll);
         editor.commit();
@@ -107,8 +105,7 @@ public class IliasPropertiesUtil {
 
     public static void setActiveCourses(Context context, Set<String> activeCourses) {
         if (activeCourses != null) {
-            // TODO change
-            SharedPreferences preferences = context.getSharedPreferences("de.whiledo.iliasdownloaderandroid", Context.MODE_PRIVATE);
+            SharedPreferences preferences = PreferencesUtil.getPreferences(context);
             SharedPreferences.Editor editor = preferences.edit();
             editor.putStringSet(Key.ACTIVE_COURSES, activeCourses);
             editor.commit();
@@ -116,8 +113,7 @@ public class IliasPropertiesUtil {
     }
 
 //    public static void saveIliasProperties(Context context, IliasProperties properties) {
-//        // TODO change
-//        SharedPreferences preferences = context.getSharedPreferences("de.whiledo.iliasdownloaderandroid", Context.MODE_PRIVATE);
+//        SharedPreferences preferences = PreferencesUtil.getPreferences(context);
 //
 //        SharedPreferences.Editor editor = preferences.edit();
 //

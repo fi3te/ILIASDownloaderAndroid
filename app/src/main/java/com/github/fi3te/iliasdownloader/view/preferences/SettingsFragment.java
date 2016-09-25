@@ -60,6 +60,8 @@ import com.github.fi3te.iliasdownloader.model.Key;
  */
 public class SettingsFragment extends PreferenceFragment implements SharedPreferences.OnSharedPreferenceChangeListener, Preference.OnPreferenceClickListener {
 
+    public static final String SHARED_PREFERENCES_NAME = "com.github.fi3te.iliasdownloader";
+
     private Preference chooseIlias;
     private Preference iliasServerUrl;
     private Preference iliasClient;
@@ -71,7 +73,7 @@ public class SettingsFragment extends PreferenceFragment implements SharedPrefer
         super.onCreate(savedInstanceState);
 
         // TODO change
-        getPreferenceManager().setSharedPreferencesName("de.whiledo.iliasdownloaderandroid");
+        getPreferenceManager().setSharedPreferencesName(SHARED_PREFERENCES_NAME);
         getPreferenceManager().setSharedPreferencesMode(Context.MODE_PRIVATE);
         addPreferencesFromResource(R.xml.preferences);
 

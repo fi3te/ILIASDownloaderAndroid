@@ -50,7 +50,7 @@ import com.github.fi3te.iliasdownloader.R;
 /**
  * Created by wennier on 04.06.2015.
  */
-public class LicencesActivity extends ActionBarActivity implements View.OnClickListener {
+public class LicensesActivity extends ActionBarActivity implements View.OnClickListener {
 
     private ImageButton iliasDownloaderButton;
     private ImageButton jodaTimeButton;
@@ -62,7 +62,7 @@ public class LicencesActivity extends ActionBarActivity implements View.OnClickL
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_licences);
+        setContentView(R.layout.activity_licenses);
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar);
@@ -91,6 +91,7 @@ public class LicencesActivity extends ActionBarActivity implements View.OnClickL
 
         TextView materialDialogsTextView = (TextView) findViewById(R.id.materialDialogsTextView);
         TextView ksoap2androidTextView = (TextView) findViewById(R.id.ksoap2androidTextView);
+        TextView gnuGplTextView = (TextView) findViewById(R.id.gnuGplTextView);
         TextView apacheTextView = (TextView) findViewById(R.id.apacheTextView);
 
         try {
@@ -116,6 +117,18 @@ public class LicencesActivity extends ActionBarActivity implements View.OnClickL
             text = new String(buffer);
 
             ksoap2androidTextView.setText(text);
+
+
+            is = getAssets().open("copy_of_gnu_gpl_v3.txt");
+            size = is.available();
+
+            buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+
+            text = new String(buffer);
+
+            gnuGplTextView.setText(text);
 
 
             is = getAssets().open("copy_of_apache_license.txt");
@@ -149,7 +162,7 @@ public class LicencesActivity extends ActionBarActivity implements View.OnClickL
     @Override
     public void onClick(View v) {
         if (v.equals(iliasDownloaderButton)) {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.whiledo.de/")));
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/kekru/ILIASDownloader2")));
         } else if (v.equals(jodaTimeButton)) {
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.joda.org/joda-time/")));
         } else if (v.equals(simpleButton)) {

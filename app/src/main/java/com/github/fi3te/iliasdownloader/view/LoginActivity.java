@@ -49,6 +49,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.github.fi3te.iliasdownloader.R;
+import com.github.fi3te.iliasdownloader.controller.PreferencesUtil;
 import com.github.fi3te.iliasdownloader.ilias.IliasController;
 import com.github.fi3te.iliasdownloader.ilias.IliasPropertiesUtil;
 import com.github.fi3te.iliasdownloader.view.fragment.task.LoginDialogFragment;
@@ -101,6 +102,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         continueWithoutLoginButton.setOnClickListener(this);
 
         ilias = IliasController.getInstance(this);
+
+        Eula.show(this);
     }
 
     @Override
@@ -148,7 +151,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View v) {
         if (v.equals(chooseIliasButton)) {
-            SharedPreferences preferences = getSharedPreferences("de.whiledo.iliasdownloaderandroid", Context.MODE_PRIVATE);
+            SharedPreferences preferences = PreferencesUtil.getPreferences(this);
             SettingsFragment.chooseIlias(preferences, this);
         } else if (v.equals(loginButton)) {
             FragmentManager fm = getSupportFragmentManager();
