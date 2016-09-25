@@ -2,12 +2,14 @@
 
 App to download files from the ILIAS platform.
 
-It uses the SyncRunner from https://github.com/kekru/ILIASDownloader2.
+It uses the SyncRunner from
+<a href="https://github.com/kekru/ILIASDownloader2">ILIASDownloader2</a>.
 
 The app is available at
-https://play.google.com/store/apps/details?id=wennierfiete.iliasdownloader
+<a href="https://play.google.com/store/apps/details?id=wennierfiete.iliasdownloader">Google Play</a>.
 
-A runnable java application can be found <a href="http://whiledo.de/index.php?p=iliasdownloader2">here</a>.
+A runnable java application can be found
+<a href="http://whiledo.de/index.php?p=iliasdownloader2">here</a>.
 
 ## License
 
