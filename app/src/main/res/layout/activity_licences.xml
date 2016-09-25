@@ -50,7 +50,7 @@
                 android:layout_alignParentTop="true"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="ILIASDownloader"
-                android:src="@drawable/ic_action_send_now" />
+                android:src="@drawable/ic_link_grey_600_36dp" />
         </RelativeLayout>
 
         <!--suppress AndroidLintHardcodedText -->
@@ -100,7 +100,7 @@
                 android:layout_alignParentTop="true"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Joda-Time"
-                android:src="@drawable/ic_action_send_now" />
+                android:src="@drawable/ic_link_grey_600_36dp" />
         </RelativeLayout>
 
         <!--suppress AndroidLintHardcodedText -->
@@ -144,7 +144,7 @@
                 android:layout_alignParentTop="true"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Simple - XML Serialization"
-                android:src="@drawable/ic_action_send_now" />
+                android:src="@drawable/ic_link_grey_600_36dp" />
         </RelativeLayout>
 
         <!--suppress AndroidLintHardcodedText -->
@@ -188,7 +188,7 @@
                 android:layout_alignParentTop="true"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="material-dialogs"
-                android:src="@drawable/ic_action_send_now" />
+                android:src="@drawable/ic_link_grey_600_36dp" />
         </RelativeLayout>
 
         <!--suppress AndroidLintHardcodedText -->
@@ -231,7 +231,7 @@
                 android:layout_alignParentTop="true"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Advanced RecyclerView"
-                android:src="@drawable/ic_action_send_now" />
+                android:src="@drawable/ic_link_grey_600_36dp" />
         </RelativeLayout>
 
         <!--suppress AndroidLintHardcodedText -->
@@ -275,7 +275,7 @@
                 android:layout_alignParentTop="true"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="ksoap2-android"
-                android:src="@drawable/ic_action_send_now" />
+                android:src="@drawable/ic_link_grey_600_36dp" />
         </RelativeLayout>
 
         <!--suppress AndroidLintHardcodedText -->
