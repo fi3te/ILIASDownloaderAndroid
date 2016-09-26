@@ -82,7 +82,7 @@ public class MenuItemSelectedUtil {
                         .title(activity.getResources().getString(R.string.about))
                         .content(activity.getResources().getString(R.string.app_name) + ((version != null) ? (" " + version) : "") + "\n"
                                 + "Fiete Wennier" + "\n"
-                                + activity.getResources().getString(R.string.created_in_cooperation_with_xxx).replaceAll("xxx", "Kevin Krummenauer"))
+                                + "https://github.com/fi3te/ILIASDownloaderAndroid")
                         .positiveText(activity.getResources().getString(R.string.support))
                         .callback(new MaterialDialog.ButtonCallback() {
                             @Override

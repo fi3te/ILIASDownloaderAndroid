@@ -1,4 +1,4 @@
-apply plugin: 'android'
+apply plugin: 'com.android.application'
 
 repositories {
     mavenCentral()
@@ -26,8 +26,8 @@ android {
         applicationId "wennierfiete.iliasdownloader"
         minSdkVersion 16
         targetSdkVersion 24
-        versionCode 4
-        versionName "0.4"
+        versionCode 5
+        versionName "0.5"
     }
     //noinspection GroovyAssignabilityCheck
     buildTypes {

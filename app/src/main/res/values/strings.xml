@@ -78,7 +78,6 @@
     <string name="delete">Löschen</string>
     <string name="delete_and_ignore">Löschen und ignorieren</string>
     <string name="remove">Entfernen</string>
-    <string name="created_in_cooperation_with_xxx">In Kooperation mit xxx entstanden :-)</string>
     <string name="eula">Open Source\nhttps://github.com/fi3te/ILIASDownloaderAndroid</string>
 
 </resources>
