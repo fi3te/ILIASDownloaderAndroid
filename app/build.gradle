@@ -18,14 +18,14 @@ repositories {
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
+    compileSdkVersion 24
     buildToolsVersion "24.0.2"
 
     //noinspection GroovyAssignabilityCheck
     defaultConfig {
         applicationId "wennierfiete.iliasdownloader"
         minSdkVersion 16
-        targetSdkVersion 23
+        targetSdkVersion 24
         versionCode 6
         versionName "0.6"
     }
@@ -47,14 +47,16 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
-    compile 'com.android.support:appcompat-v7:23.0.1'
-    compile 'com.android.support:design:23.0.1'
-    compile 'com.android.support:recyclerview-v7:23.0.1'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
 
     compile 'com.afollestad.material-dialogs:core:0.9.0.2'
 
     compile 'joda-time:joda-time:2.7'
-    compile 'com.h6ah4i.android.widget.advrecyclerview:advrecyclerview:0.7.4'
+    compile ('com.h6ah4i.android.widget.advrecyclerview:advrecyclerview:0.9.3@aar'){
+        transitive=true
+    }
 
     compile('de.whiledo.iliasdownloader:ILIASDownloader-SyncRunner:0.0.12-RELEASE') {
         exclude group: 'stax', module: 'stax-api'
