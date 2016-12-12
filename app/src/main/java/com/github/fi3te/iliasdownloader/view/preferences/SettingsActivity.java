@@ -32,6 +32,7 @@
 package com.github.fi3te.iliasdownloader.view.preferences;
 
 import android.app.Activity;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
@@ -58,8 +59,13 @@ public class SettingsActivity extends Activity {
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
 
-        // Trick
-        LinearLayout root = (LinearLayout) findViewById(android.R.id.list).getParent().getParent().getParent();
+        LinearLayout root;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            root = (LinearLayout) findViewById(android.R.id.list).getParent().getParent();
+        } else {
+            root = (LinearLayout) findViewById(android.R.id.list).getParent().getParent().getParent();
+        }
+
         Toolbar bar = (Toolbar) LayoutInflater.from(this).inflate(R.layout.app_bar_settings, root, false);
         root.addView(bar, 0);
         bar.setNavigationOnClickListener(new View.OnClickListener() {
